@@ -94,8 +94,8 @@ def evaluate(
         num_return_sequences=num_beams, # Return multiple samples per seq
         num_beam_groups=num_beam_groups,
         diversity_penalty=diversity_penalty,
-        # length_penalty=length_penalty,
         repetition_penalty=repetition_penalty,
+        # length_penalty=length_penalty,
         **kwargs
     )
 
