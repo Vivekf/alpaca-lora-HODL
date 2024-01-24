@@ -79,6 +79,7 @@ def evaluate(
     diversity_penalty=0.,
     do_sample=False,
     length_penalty=-10.,
+    repetition_penalty=1.,
     **kwargs,
 ):
     prompt = prompter.generate_prompt(instruction, input)
@@ -94,6 +95,7 @@ def evaluate(
         num_beam_groups=num_beam_groups,
         diversity_penalty=diversity_penalty,
         # length_penalty=length_penalty,
+        repetition_penalty=repetition_penalty
         **kwargs
     )
 
