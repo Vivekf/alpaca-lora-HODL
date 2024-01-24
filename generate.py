@@ -95,7 +95,7 @@ def evaluate(
         num_beam_groups=num_beam_groups,
         diversity_penalty=diversity_penalty,
         # length_penalty=length_penalty,
-        repetition_penalty=repetition_penalty
+        repetition_penalty=repetition_penalty,
         **kwargs
     )
 
