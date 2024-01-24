@@ -79,7 +79,6 @@ def evaluate(
     diversity_penalty=0.,
     do_sample=False,
     length_penalty=-10.,
-    repetition_penalty=1.,
     **kwargs,
 ):
     prompt = prompter.generate_prompt(instruction, input)
